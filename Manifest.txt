@@ -1,0 +1,8 @@
+.autotest
+History.rdoc
+Manifest.txt
+README.rdoc
+Rakefile
+bin/githubstats
+lib/githubstats.rb
+test/test_githubstats.rb
