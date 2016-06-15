@@ -7,7 +7,7 @@ Hoe.plugin :isolate
 Hoe.plugin :seattlerb
 Hoe.plugin :rdoc
 
-Hoe.spec "githubstats" do
+Hoe.spec "githubscore" do
   developer "Ryan Davis", "ryand-ruby@zenspider.com"
 
   license "MIT"
@@ -17,7 +17,7 @@ end
 
 task :run => :isolate do
   proj = ENV["PROJ"] || "zenspider seattlerb"
-  ruby "-Ilib bin/githubstats #{proj}"
+  ruby "-Ilib bin/githubscore #{proj}"
 end
 
 # vim: syntax=ruby

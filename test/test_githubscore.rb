@@ -1,7 +1,7 @@
 require "minitest/autorun"
-require "githubstats"
+require "githubscore"
 
-class TestGithubstats < Minitest::Test
+class TestGithubscore < Minitest::Test
   def test_sanity
     flunk "write tests or I will kneecap you"
   end

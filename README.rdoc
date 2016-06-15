@@ -1,27 +1,39 @@
-= githubstats
+= githubscore
 
-home :: https://github.com/seattlerb/githubstats
-rdoc :: http://docs.seattlerb.org/githubstats
+home :: https://github.com/seattlerb/githubscore
+rdoc :: http://docs.seattlerb.org/githubscore
 
 == DESCRIPTION:
 
-FIX (describe your package)
+githubscore provides a dashboard overview of the current state of your
+github issues and pull requests.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Outputs an easy to read scorecard on the state of your projects
+* Lists "worst-first" so you can focus on the biggest problem.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+    % githubscore zenspider seattlerb 
+    ...
+    seattlerb/hoe                       =   2 2014-05-10  71w |   0        n/a   0w |  143w
+    zenspider/elisp                     =   1 2014-02-02 123w |   0        n/a   0w |  123w
+    seattlerb/ohmygems                  =   1 2014-02-26 119w |   0        n/a   0w |  119w
+    seattlerb/wilson                    =   1 2014-04-13 113w |   0        n/a   0w |  113w
+    seattlerb/sexp_processor            =   1 2014-05-09 109w |   0        n/a   0w |  109w
+    seattlerb/debride                   =   2 2015-04-28  46w |   0        n/a   0w |   93w
+    seattlerb/minitest-sprint           =   1 2015-03-12  65w |   0        n/a   0w |   65w
+    seattlerb/flog                      =   1 2015-05-27  55w |   0        n/a   0w |   55w
+    seattlerb/minitest-debugger         =   1 2015-10-07  36w |   0        n/a   0w |   36w
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* octokit ~> 4.0
 
 == INSTALL:
 
-* sudo gem install githubstats
+* sudo gem install githubscore
 
 == LICENSE:
 

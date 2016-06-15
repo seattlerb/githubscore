@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require "githubstats"
-
-Githubstats.run ARGV if $0 == __FILE__

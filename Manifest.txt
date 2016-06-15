@@ -3,6 +3,6 @@ History.rdoc
 Manifest.txt
 README.rdoc
 Rakefile
-bin/githubstats
-lib/githubstats.rb
-test/test_githubstats.rb
+bin/githubscore
+lib/githubscore.rb
+test/test_githubscore.rb

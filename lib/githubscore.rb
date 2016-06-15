@@ -2,7 +2,7 @@ require "octokit"
 
 Octokit.auto_paginate = true
 
-class Githubstats
+class Githubscore
   VERSION = "1.0.0"
 
   NOW = Time.now
