@@ -96,31 +96,7 @@ class Githubscore
     old && old.iso8601[0..9] || "n/a"
   end
 
-  def git_param name, default = nil
-    param = `git config github.#{name}`.chomp
-    param.empty? ? default : param
-  end
-
   def client
-    @client ||=
-      begin
-        endpoints = {}
-        endpoints[:api] = git_param(:api)
-        endpoints[:web] = git_param(:web)
-
-        auth = {
-                :name     => git_param(:name),
-                :user     => git_param(:user),
-                :oauth    => git_param("oauth-token"),
-               }
-
-        unless auth[:user] && auth[:oauth]
-          raise "Missing authentication parameters."
-        end
-
-        auth[:name] ||= auth[:user]
-
-        Octokit::Client.new :access_token => auth[:oauth]
-      end
+    @client ||= Octokit::Client.new :access_token => `gh auth token`.chomp
   end
 end
