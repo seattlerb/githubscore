@@ -3,7 +3,7 @@ require "octokit"
 Octokit.auto_paginate = true
 
 class Githubscore
-  VERSION = "1.0.0"
+  VERSION = "1.0.1"
 
   NOW = Time.now
   SECS_PER_WEEK = 86_400 * 7
