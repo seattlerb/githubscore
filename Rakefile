@@ -3,7 +3,7 @@
 require "rubygems"
 require "hoe"
 
-Hoe.plugin :isolate
+Hoe.plugin :isolate_binaries
 Hoe.plugin :seattlerb
 Hoe.plugin :rdoc
 
